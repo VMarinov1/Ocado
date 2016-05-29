@@ -13,7 +13,19 @@
 		229EBB0F1CFADAF50001AD24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229EBB0D1CFADAF50001AD24 /* Main.storyboard */; };
 		229EBB111CFADAF50001AD24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229EBB101CFADAF50001AD24 /* Assets.xcassets */; };
 		229EBB141CFADAF50001AD24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229EBB121CFADAF50001AD24 /* LaunchScreen.storyboard */; };
+		229EBB201CFAE9F90001AD24 /* TimeIntervalWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 229EBB1F1CFAE9F90001AD24 /* TimeIntervalWatch.m */; };
+		229EBB281CFAF2B80001AD24 /* Ocado_Test_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 229EBB271CFAF2B80001AD24 /* Ocado_Test_Tests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		229EBB2A1CFAF2B80001AD24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 229EBAF91CFADAF50001AD24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 229EBB001CFADAF50001AD24;
+			remoteInfo = Ocado_Test;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		229EBB011CFADAF50001AD24 /* Ocado_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ocado_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +38,22 @@
 		229EBB101CFADAF50001AD24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229EBB131CFADAF50001AD24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		229EBB151CFADAF50001AD24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229EBB1E1CFAE9F90001AD24 /* TimeintervalWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeintervalWatch.h; sourceTree = "<group>"; };
+		229EBB1F1CFAE9F90001AD24 /* TimeIntervalWatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeIntervalWatch.m; sourceTree = "<group>"; };
+		229EBB251CFAF2B80001AD24 /* Ocado_Test Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ocado_Test Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229EBB271CFAF2B80001AD24 /* Ocado_Test_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ocado_Test_Tests.m; sourceTree = "<group>"; };
+		229EBB291CFAF2B80001AD24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		229EBAFE1CFADAF50001AD24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229EBB221CFAF2B80001AD24 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				229EBB031CFADAF50001AD24 /* Ocado_Test */,
+				229EBB261CFAF2B80001AD24 /* Ocado_Test Tests */,
 				229EBB021CFADAF50001AD24 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				229EBB011CFADAF50001AD24 /* Ocado_Test.app */,
+				229EBB251CFAF2B80001AD24 /* Ocado_Test Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,13 +84,11 @@
 		229EBB031CFADAF50001AD24 /* Ocado_Test */ = {
 			isa = PBXGroup;
 			children = (
+				229EBB1D1CFAE6EC0001AD24 /* Assets */,
+				229EBB1C1CFAE6940001AD24 /* Controllers */,
+				229EBB1B1CFAE6890001AD24 /* Models */,
 				229EBB071CFADAF50001AD24 /* AppDelegate.h */,
 				229EBB081CFADAF50001AD24 /* AppDelegate.m */,
-				229EBB0A1CFADAF50001AD24 /* ViewController.h */,
-				229EBB0B1CFADAF50001AD24 /* ViewController.m */,
-				229EBB0D1CFADAF50001AD24 /* Main.storyboard */,
-				229EBB101CFADAF50001AD24 /* Assets.xcassets */,
-				229EBB121CFADAF50001AD24 /* LaunchScreen.storyboard */,
 				229EBB151CFADAF50001AD24 /* Info.plist */,
 				229EBB041CFADAF50001AD24 /* Supporting Files */,
 			);
@@ -77,6 +101,43 @@
 				229EBB051CFADAF50001AD24 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		229EBB1B1CFAE6890001AD24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				229EBB1E1CFAE9F90001AD24 /* TimeintervalWatch.h */,
+				229EBB1F1CFAE9F90001AD24 /* TimeIntervalWatch.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		229EBB1C1CFAE6940001AD24 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				229EBB0A1CFADAF50001AD24 /* ViewController.h */,
+				229EBB0B1CFADAF50001AD24 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		229EBB1D1CFAE6EC0001AD24 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				229EBB0D1CFADAF50001AD24 /* Main.storyboard */,
+				229EBB101CFADAF50001AD24 /* Assets.xcassets */,
+				229EBB121CFADAF50001AD24 /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		229EBB261CFAF2B80001AD24 /* Ocado_Test Tests */ = {
+			isa = PBXGroup;
+			children = (
+				229EBB271CFAF2B80001AD24 /* Ocado_Test_Tests.m */,
+				229EBB291CFAF2B80001AD24 /* Info.plist */,
+			);
+			path = "Ocado_Test Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +160,24 @@
 			productReference = 229EBB011CFADAF50001AD24 /* Ocado_Test.app */;
 			productType = "com.apple.product-type.application";
 		};
+		229EBB241CFAF2B80001AD24 /* Ocado_Test Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 229EBB2C1CFAF2B80001AD24 /* Build configuration list for PBXNativeTarget "Ocado_Test Tests" */;
+			buildPhases = (
+				229EBB211CFAF2B80001AD24 /* Sources */,
+				229EBB221CFAF2B80001AD24 /* Frameworks */,
+				229EBB231CFAF2B80001AD24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				229EBB2B1CFAF2B80001AD24 /* PBXTargetDependency */,
+			);
+			name = "Ocado_Test Tests";
+			productName = "Ocado_Test Tests";
+			productReference = 229EBB251CFAF2B80001AD24 /* Ocado_Test Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -110,6 +189,10 @@
 				TargetAttributes = {
 					229EBB001CFADAF50001AD24 = {
 						CreatedOnToolsVersion = 7.3;
+					};
+					229EBB241CFAF2B80001AD24 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 229EBB001CFADAF50001AD24;
 					};
 				};
 			};
@@ -127,6 +210,7 @@
 			projectRoot = "";
 			targets = (
 				229EBB001CFADAF50001AD24 /* Ocado_Test */,
+				229EBB241CFAF2B80001AD24 /* Ocado_Test Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +226,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		229EBB231CFAF2B80001AD24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -150,12 +241,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				229EBB0C1CFADAF50001AD24 /* ViewController.m in Sources */,
+				229EBB201CFAE9F90001AD24 /* TimeIntervalWatch.m in Sources */,
 				229EBB091CFADAF50001AD24 /* AppDelegate.m in Sources */,
 				229EBB061CFADAF50001AD24 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		229EBB211CFAF2B80001AD24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229EBB281CFAF2B80001AD24 /* Ocado_Test_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		229EBB2B1CFAF2B80001AD24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 229EBB001CFADAF50001AD24 /* Ocado_Test */;
+			targetProxy = 229EBB2A1CFAF2B80001AD24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		229EBB0D1CFADAF50001AD24 /* Main.storyboard */ = {
@@ -267,6 +375,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Vladimir-Marinov.Ocado-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -278,6 +387,31 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Vladimir-Marinov.Ocado-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		229EBB2D1CFAF2B80001AD24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Ocado_Test Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Vladimir-Marinov.Ocado-Test-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ocado_Test.app/Ocado_Test";
+			};
+			name = Debug;
+		};
+		229EBB2E1CFAF2B80001AD24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Ocado_Test Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Vladimir-Marinov.Ocado-Test-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ocado_Test.app/Ocado_Test";
 			};
 			name = Release;
 		};
@@ -300,6 +434,16 @@
 				229EBB1A1CFADAF50001AD24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		229EBB2C1CFAF2B80001AD24 /* Build configuration list for PBXNativeTarget "Ocado_Test Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229EBB2D1CFAF2B80001AD24 /* Debug */,
+				229EBB2E1CFAF2B80001AD24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
